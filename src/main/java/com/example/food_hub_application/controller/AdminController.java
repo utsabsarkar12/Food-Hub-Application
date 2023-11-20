@@ -24,6 +24,8 @@ public class AdminController {
     CategoryService categoryService;
     @Autowired
     ProductService productService;
+
+    // Category Section
     @GetMapping("/admin")
     public String adminHome(){
         return "adminHome";
