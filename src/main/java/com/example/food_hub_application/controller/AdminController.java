@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @Controller
 public class AdminController {
-    public String uploadDirectory = System.getProperty("user.dir") + "/src/main/resources/static/product_images";
+    public static String uploadDirectory = System.getProperty("user.dir") + "/src/main/resources/static/product_images";
     @Autowired
     CategoryService categoryService;
     @Autowired
@@ -124,14 +124,5 @@ public class AdminController {
 
         return "productsAdd";
     }
-
-
-
-
-
-
-
-
-
 
 }
